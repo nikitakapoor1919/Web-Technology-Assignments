@@ -1,0 +1,124 @@
+body {
+    font-family: Muli, sans-serif;
+    background: #4d5185;
+    color: white;
+}
+
+.box {
+    width: 40%;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+p {
+    font-weight: 600;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
+    margin-top: 100px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=number],
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+#subject * {
+    font-size: 15px;
+}
+
+label {
+    text-transform: capitalize;
+    font-size: 0.9rem;
+}
+
+.space {
+    display: flex;
+    justify-content: space-between;
+}
+
+.space-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: #6166a7;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 200px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #53589f;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.divide-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+img {
+    margin-top: 100px;
+    position: fixed;
+    margin-bottom: 100px;
+}
+
+#countryCode {
+    width: 10%
+}
+
+label+div {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 600px) {
+    .box {
+        width: 90%;
+        margin: 0 auto;
+    }
+    img {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .divide-section {
+        display: block;
+    }
+    select {
+        width: 50%
+    }
+    .button {
+        width: 150px
+    }
+}
